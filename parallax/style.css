@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 11px;
+}
+.container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    object-fit: cover;
+}
+h1{
+    position:absolute;
+    top: 5rem;
+    letter-spacing: 30px;
+    font-size: 10rem;
+    color: white;
+    text-shadow:0 0 10px rgba(0,0,0,0.3);
+    font-family: monospace;
+}
+
+section{
+    background-color: rgb(147, 134, 188);
+    color: white;
+    padding: 5rem 0;
+}
+.secheading{
+    font-size:6rem ;
+    color: rgba(220, 35, 42, 0.498);
+    padding: 0 10rem;
+
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position:relative;
+    width: 100%;
+    background-attachment: fixed; 
+    background-size: cover;  
+    background-position: center; 
+    height: 500px;
+}
+
+.desc{
+    position: absolute;
+    background-color: rgb(209, 157, 157);
+    padding: 0.5rem 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;  
+}
+.bg1{
+    background-image: url(biking.jpg);
+}
+ 
+.bg2{
+    background-image: url(para.jpg);
+} 
+
+.bg3{
+    background-image: url(surfing.jpg);
+}
+.bg4{
+    background-image: url(cricket.jpg);
+} 
